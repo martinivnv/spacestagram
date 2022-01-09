@@ -37,3 +37,19 @@ header {
 	margin: 0px 0px 1rem 40px;
 	font-weight: normal;
 }
+
+#load-button {
+	margin: 0 0 1em 0;
+	font-size: 1.3em;
+	color: #dfdfdf;
+	border: none;
+	background-color: #e91e63;
+	padding: 1em;
+	width: 650px;
+	cursor: pointer;
+	border-radius: 0.4em;
+}
+
+#load-button:hover {
+	background-color: #431ee9;
+}
