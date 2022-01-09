@@ -2,6 +2,7 @@ import "./App.css";
 import Post from "./Post";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Button } from "reactstrap";
 
 const App = () => {
 	const key = "wTQiakvGaa0tNTWAZq4ojBYiL6VyRpsWuzD2T2a1";
@@ -50,6 +51,9 @@ const App = () => {
 				) : (
 					<h1>Loading...</h1>
 				)}
+				<Button id="load-button" onClick={() => fetchImages(3)}>
+					Load More...
+				</Button>
 			</div>
 		</div>
 	);
