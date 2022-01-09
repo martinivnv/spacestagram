@@ -30,7 +30,7 @@ const Post = ({ title, body, date, img, hdUrl }) => {
 						/>
 					)}
 					<CardText>{body}</CardText>
-					<a href={hdUrl} target="_blank" rel="noreferrer">
+					<a href={hdUrl} target="_blank" rel="noreferrer" className="hd-link">
 						<FontAwesomeIcon icon={faCamera} />
 						{"     "}See it in HD
 					</a>

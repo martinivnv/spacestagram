@@ -30,6 +30,9 @@ header {
 	background-color: #6f00cf;
 	filter: drop-shadow(0px 5px 4px #00000045);
 	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 #app-title {
@@ -77,8 +80,24 @@ header {
 	header {
 		text-align: center;
 	}
+
+	#repo-link {
+		margin-right: 25px;
+	}
+
+	#app-title {
+		margin-left: 25px;
+	}
 }
 
 .logo {
 	transform: rotate(0.75turn);
+}
+
+#repo-link {
+	font-size: 1.8em;
+	margin-right: 40px;
+	font-family: monospace;
+	cursor: pointer;
+	color: #dfdfdf;
 }

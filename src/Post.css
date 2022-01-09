@@ -39,7 +39,7 @@
 	transition: 0.5s;
 }
 
-a {
+.hd-link {
 	position: absolute;
 	color: #ffc107;
 	font-weight: bold;

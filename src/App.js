@@ -4,6 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpaceShuttle } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { ThreeDots } from "react-loader-spinner";
 
 const App = () => {
@@ -41,6 +42,14 @@ const App = () => {
 					<FontAwesomeIcon icon={faSpaceShuttle} className="logo" />{" "}
 					Spacestagram
 				</h1>
+				<a
+					id="repo-link"
+					href="https://github.com/martinivnv/spacestagram"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<FontAwesomeIcon icon={faGithub} />
+				</a>
 				{/* <h4 id="app-subtitle">
 					Powered by NASA's Astronomy Picture of the Day API
 				</h4> */}
