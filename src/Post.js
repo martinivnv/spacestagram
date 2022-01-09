@@ -7,7 +7,6 @@ import { faHeart, faCamera } from "@fortawesome/free-solid-svg-icons";
 
 const Post = ({ title, body, date, img, hdUrl }) => {
 	const [liked, setLiked] = useState(false);
-	const [showDesc, setShowDesc] = useState(false);
 
 	return (
 		<div>

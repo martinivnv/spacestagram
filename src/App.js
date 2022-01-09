@@ -31,7 +31,7 @@ const App = () => {
 	};
 
 	useEffect(() => {
-		fetchImages(9);
+		fetchImages(12);
 	}, []);
 
 	return (
@@ -62,7 +62,7 @@ const App = () => {
 			)}
 
 			{!loading ? (
-				<button id="load-button" onClick={() => fetchImages(9)}>
+				<button id="load-button" onClick={() => fetchImages(12)}>
 					Load More...
 				</button>
 			) : (
