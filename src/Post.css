@@ -25,3 +25,11 @@
 	font-weight: bold;
 	color: #e91e63;
 }
+
+.heart {
+	font-size: 2em;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	cursor: pointer;
+}

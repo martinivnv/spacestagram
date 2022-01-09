@@ -2,7 +2,6 @@ import "./App.css";
 import Post from "./Post";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Button } from "reactstrap";
 
 const App = () => {
 	const key = "wTQiakvGaa0tNTWAZq4ojBYiL6VyRpsWuzD2T2a1";
@@ -34,9 +33,9 @@ const App = () => {
 		<div className="app">
 			<header>
 				<h1 id="app-title">🌙 Spacestagram</h1>
-				<h4 id="app-subtitle">
+				{/* <h4 id="app-subtitle">
 					Powered by NASA's Astronomy Picture of the Day API
-				</h4>
+				</h4> */}
 			</header>
 			<div className="container">
 				{images ? (
@@ -51,9 +50,9 @@ const App = () => {
 				) : (
 					<h1>Loading...</h1>
 				)}
-				<Button id="load-button" onClick={() => fetchImages(3)}>
+				<button id="load-button" onClick={() => fetchImages(3)}>
 					Load More...
-				</Button>
+				</button>
 			</div>
 		</div>
 	);

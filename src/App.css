@@ -15,7 +15,7 @@ body {
 .container {
 	width: 650px;
 	position: relative;
-	top: 120px;
+	top: 95px;
 }
 
 header {
@@ -30,7 +30,7 @@ header {
 
 #app-title {
 	position: relative;
-	margin: 1rem 0px 0px 40px;
+	margin: 1rem 40px;
 }
 
 #app-subtitle {
