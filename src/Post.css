@@ -15,3 +15,10 @@
 	padding: 1em;
 	text-align: left;
 }
+
+#date {
+	margin-bottom: 0px;
+	text-align: right;
+	font-weight: bold;
+	color: #e91e63;
+}

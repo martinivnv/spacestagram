@@ -12,7 +12,12 @@ function App() {
 				</h4>
 			</header>
 			<div className="container">
-				<Post />
+				<Post
+					title="Title"
+					body="Lorem ipsum fhjdfhjdafkaajdjadffkjah h fghkjg af fgk fg fdsgn gsfk jsdgfk j"
+					date="10-23-2020"
+					img="https://picsum.photos/318/180"
+				/>
 			</div>
 		</div>
 	);
