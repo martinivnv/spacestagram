@@ -23,7 +23,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/martinivnv/spacestagram">
-    <img src="public/images/logo.PNG" alt="Logo" width="50" height="80">
+    <img src="public/images/logo.PNG" alt="Logo" width="55" height="70">
   </a>
 
   <h3 align="center">Spacestagram - Image Sharing from the Final Frontier</h3>
@@ -72,9 +72,21 @@
 ## Images
 
 <p align="center">
-<img src="images/screenshot.png" alt="screenshot" width="800" >
+<img src="public/images/screenshot-1.png" alt="screenshot-1" width="800" >
     <p align="center">
-      Figure 1: Application in use
+      Desktop View
+    </p>
+</p>
+<p align="center">
+<img src="public/images/screenshot-2.PNG" alt="screenshot-2" width="400" >
+    <p align="center">
+      Tablet View
+    </p>
+</p>
+<p align="center">
+<img src="public/images/screenshot-3.PNG" alt="screenshot-3" width="250" >
+    <p align="center">
+      Mobile View
     </p>
 </p>
 
@@ -82,8 +94,8 @@
 
 ## About The Project
 
-This project was built for the Shopify FE Developer Intern Challenge. Some extra things I added were animating the
-like button, a loading indicator, and external links to full-size HD images.
+This project was built for submission to the Shopify FE Developer Intern Challenge. Some extra things I added not in the assignment were animating the
+like button, a loading indicator, and external links to full-size HD images. I also made the app fully responsive to different screen sizes.
 
 ### Built With
 
