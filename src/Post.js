@@ -3,9 +3,9 @@ import { Card, CardImg, CardBody, CardTitle, CardText } from "reactstrap";
 import "./Post.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faCamera } from "@fortawesome/free-solid-svg-icons";
 
-const Post = ({ title, body, date, img }) => {
+const Post = ({ title, body, date, img, hdUrl }) => {
 	const [liked, setLiked] = useState(false);
 
 	return (
@@ -30,6 +30,10 @@ const Post = ({ title, body, date, img }) => {
 						/>
 					)}
 					<CardText>{body}</CardText>
+					<a href={hdUrl} target="_blank">
+						<FontAwesomeIcon icon={faCamera} />
+						{"     "}See it in HD
+					</a>
 					<CardText id="date">{date}</CardText>
 				</CardBody>
 			</Card>

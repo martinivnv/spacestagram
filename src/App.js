@@ -23,6 +23,7 @@ const App = () => {
 			.then((response) => {
 				setImages([...images, ...response.data]);
 				setLoading(false);
+				console.log(response.data);
 			})
 			.catch((error) => {
 				console.log(error);
@@ -53,6 +54,7 @@ const App = () => {
 							body={img.explanation}
 							date={img.date}
 							img={img.url}
+							hdUrl={img.hdurl}
 						/>
 					))}
 				</div>

@@ -35,3 +35,10 @@
 	cursor: pointer;
 	transition: 0.5s;
 }
+
+a {
+	position: absolute;
+	color: #ffc107;
+	font-weight: bold;
+	text-decoration: none;
+}
