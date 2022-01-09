@@ -55,6 +55,7 @@ const App = () => {
 							date={img.date}
 							img={img.url}
 							hdUrl={img.hdurl}
+							key={img.date}
 						/>
 					))}
 				</div>
