@@ -1,0 +1,17 @@
+.card {
+	background-color: #1e1e1e;
+	border-radius: 0.4em;
+}
+
+.card-img-top {
+	border-radius: 0.4em 0.4em 0 0;
+}
+
+.card-title {
+	margin: 0px;
+}
+
+.card-body {
+	padding: 1em;
+	text-align: left;
+}
