@@ -23,7 +23,7 @@
 	margin-bottom: 0px;
 	text-align: right;
 	font-weight: bold;
-	color: #e91e63;
+	color: #01ce96;
 }
 
 .heart {
@@ -32,4 +32,5 @@
 	right: 1em;
 	top: 1em;
 	cursor: pointer;
+	transition: 0.5s;
 }

@@ -2,6 +2,8 @@ import "./App.css";
 import Post from "./Post";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpaceShuttle } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
 	const key = "wTQiakvGaa0tNTWAZq4ojBYiL6VyRpsWuzD2T2a1";
@@ -32,7 +34,9 @@ const App = () => {
 	return (
 		<div className="app">
 			<header>
-				<h1 id="app-title">🌙 Spacestagram</h1>
+				<h1 id="app-title">
+					<FontAwesomeIcon icon={faSpaceShuttle} /> Spacestagram
+				</h1>
 				{/* <h4 id="app-subtitle">
 					Powered by NASA's Astronomy Picture of the Day API
 				</h4> */}

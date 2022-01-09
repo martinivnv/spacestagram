@@ -48,6 +48,7 @@ header {
 	width: 650px;
 	cursor: pointer;
 	border-radius: 0.4em;
+	transition: 0.5s;
 }
 
 #load-button:hover {
