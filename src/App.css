@@ -54,6 +54,7 @@ header {
 	cursor: pointer;
 	border-radius: 0.4em;
 	transition: 0.5s;
+	font-weight: bold;
 }
 
 #load-button:hover {

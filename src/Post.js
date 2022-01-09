@@ -7,6 +7,7 @@ import { faHeart, faCamera } from "@fortawesome/free-solid-svg-icons";
 
 const Post = ({ title, body, date, img, hdUrl }) => {
 	const [liked, setLiked] = useState(false);
+	const [showDesc, setShowDesc] = useState(false);
 
 	return (
 		<div>
@@ -34,7 +35,7 @@ const Post = ({ title, body, date, img, hdUrl }) => {
 						<FontAwesomeIcon icon={faCamera} />
 						{"     "}See it in HD
 					</a>
-					<CardText id="date">{date}</CardText>
+					<CardText className="date">{date}</CardText>
 				</CardBody>
 			</Card>
 		</div>

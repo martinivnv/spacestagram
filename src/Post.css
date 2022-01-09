@@ -3,6 +3,7 @@
 	border-radius: 0.4em;
 	filter: drop-shadow(5px 5px 4px #000000c9);
 	margin-bottom: 1em;
+	padding-bottom: 2em;
 }
 
 .card-img-top {
@@ -20,11 +21,13 @@
 	font-size: 0.8em;
 }
 
-#date {
-	margin-bottom: 0px;
-	text-align: right;
+.date {
 	font-weight: bold;
 	color: #01ce96;
+	position: absolute;
+	bottom: 1.5em;
+	right: 1.5em;
+	margin-bottom: 0px;
 }
 
 .heart {
@@ -41,4 +44,9 @@ a {
 	color: #ffc107;
 	font-weight: bold;
 	text-decoration: none;
+	bottom: 1.5em;
+	left: 1.5em;
 }
+/* .description {
+	font-size: 1.3em;
+} */
