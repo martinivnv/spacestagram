@@ -15,8 +15,9 @@
 }
 
 .card-body {
-	padding: 1em;
+	padding: 1.5em;
 	text-align: left;
+	font-size: 0.8em;
 }
 
 #date {

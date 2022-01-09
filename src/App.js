@@ -4,12 +4,15 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpaceShuttle } from "@fortawesome/free-solid-svg-icons";
+import { ThreeDots } from "react-loader-spinner";
 
 const App = () => {
 	const key = "wTQiakvGaa0tNTWAZq4ojBYiL6VyRpsWuzD2T2a1";
 	const [images, setImages] = useState([]);
+	const [loading, setLoading] = useState(true);
 
 	const fetchImages = (num) => {
+		setLoading(true);
 		axios
 			.get("https://api.nasa.gov/planetary/apod", {
 				params: {
@@ -19,8 +22,7 @@ const App = () => {
 			})
 			.then((response) => {
 				setImages([...images, ...response.data]);
-				console.log(response.data);
-				console.log(images);
+				setLoading(false);
 			})
 			.catch((error) => {
 				console.log(error);
@@ -28,7 +30,7 @@ const App = () => {
 	};
 
 	useEffect(() => {
-		fetchImages(3);
+		fetchImages(9);
 	}, []);
 
 	return (
@@ -41,23 +43,28 @@ const App = () => {
 					Powered by NASA's Astronomy Picture of the Day API
 				</h4> */}
 			</header>
-			<div className="container">
-				{images ? (
-					images.map((img) => (
+			{!images ? (
+				<h1>Loading...</h1>
+			) : (
+				<div className="container">
+					{images.map((img) => (
 						<Post
 							title={img.title}
 							body={img.explanation}
 							date={img.date}
 							img={img.url}
 						/>
-					))
-				) : (
-					<h1>Loading...</h1>
-				)}
-				<button id="load-button" onClick={() => fetchImages(3)}>
+					))}
+				</div>
+			)}
+
+			{!loading ? (
+				<button id="load-button" onClick={() => fetchImages(9)}>
 					Load More...
 				</button>
-			</div>
+			) : (
+				<ThreeDots color="#e91e63" height="100" width="100" />
+			)}
 		</div>
 	);
 };

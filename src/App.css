@@ -13,9 +13,13 @@ body {
 }
 
 .container {
-	width: 650px;
+	display: grid;
 	position: relative;
 	top: 95px;
+	grid-template-columns: 30vw 30vw 30vw;
+	column-gap: 3vw;
+	row-gap: 2vw;
+	margin-bottom: 6em;
 }
 
 header {
@@ -31,6 +35,7 @@ header {
 #app-title {
 	position: relative;
 	margin: 1rem 40px;
+	font-size: 1.6em;
 }
 
 #app-subtitle {
@@ -40,12 +45,12 @@ header {
 
 #load-button {
 	margin: 0 0 1em 0;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	color: #dfdfdf;
 	border: none;
 	background-color: #e91e63;
-	padding: 1em;
-	width: 650px;
+	padding: 0.8em;
+	width: 40vw;
 	cursor: pointer;
 	border-radius: 0.4em;
 	transition: 0.5s;
