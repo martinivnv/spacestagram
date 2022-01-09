@@ -16,8 +16,9 @@ const App = () => {
 				},
 			})
 			.then((response) => {
-				setImages(images.push[response]);
-				console.log(response);
+				setImages([...images, ...response.data]);
+				console.log(response.data);
+				console.log(images);
 			})
 			.catch((error) => {
 				console.log(error);
@@ -37,12 +38,18 @@ const App = () => {
 				</h4>
 			</header>
 			<div className="container">
-				<Post
-					title="Title"
-					body="Lorem ipsum fhjdfhjdafkaajdjadffkjah h fghkjg af fgk fg fdsgn gsfk jsdgfk j"
-					date="10-23-2020"
-					img="https://picsum.photos/318/180"
-				/>
+				{images ? (
+					images.map((img) => (
+						<Post
+							title="Title"
+							body="Lorem ipsum fhjdfhjdafkaajdjadffkjah h fghkjg af fgk fg fdsgn gsfk jsdgfk j"
+							date="10-23-2020"
+							img="https://picsum.photos/318/180"
+						/>
+					))
+				) : (
+					<h1>Loading...</h1>
+				)}
 			</div>
 		</div>
 	);
