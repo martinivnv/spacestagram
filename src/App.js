@@ -38,7 +38,8 @@ const App = () => {
 		<div className="app">
 			<header>
 				<h1 id="app-title">
-					<FontAwesomeIcon icon={faSpaceShuttle} /> Spacestagram
+					<FontAwesomeIcon icon={faSpaceShuttle} className="logo" />{" "}
+					Spacestagram
 				</h1>
 				{/* <h4 id="app-subtitle">
 					Powered by NASA's Astronomy Picture of the Day API

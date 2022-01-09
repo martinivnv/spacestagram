@@ -78,3 +78,7 @@ header {
 		text-align: center;
 	}
 }
+
+.logo {
+	transform: rotate(0.75turn);
+}
